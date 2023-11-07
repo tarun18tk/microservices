@@ -1,17 +1,17 @@
 # microservices
-The "Microservices Architecture with Spring Cloud, Eureka, and API Gateway" project is an initiative aimed at modernizing and optimizing the software architecture of an organization by implementing a microservices-based approach. This project leverages Spring Cloud, Eureka, and an API Gateway to enhance scalability, maintainability, and agility in software development and deployment.
+The "**Microservices Architecture with Spring Cloud, Eureka, and API Gateway**" project is an initiative aimed at modernizing and optimizing the software architecture of an organization by implementing a microservices-based approach. This project leverages Spring Cloud, Eureka, and an API Gateway to enhance scalability, maintainability, and agility in software development and deployment.
 
-Key Components:
+**Key Components:**
 
-Microservices: The project involves breaking down monolithic applications into smaller, independently deployable microservices. Each microservice focuses on a specific business function, allowing for flexibility and ease of maintenance.
+**Microservices**: The project involves breaking down monolithic applications into smaller, independently deployable microservices. Each microservice focuses on a specific business function, allowing for flexibility and ease of maintenance.
 
-Spring Cloud: Spring Cloud is used to provide a suite of tools for building robust and scalable microservices. It offers features such as service discovery, load balancing, and configuration management.
+**Spring** **Cloud**: Spring Cloud is used to provide a suite of tools for building robust and scalable microservices. It offers features such as service discovery, load balancing, and configuration management.
 
-Eureka: Eureka is a service registry and discovery server that plays a crucial role in managing microservices. It helps services find and communicate with each other dynamically.
+**Eureka**: Eureka is a service registry and discovery server that plays a crucial role in managing microservices. It helps services find and communicate with each other dynamically.
 
-API Gateway: An API Gateway serves as the entry point for external requests. It handles routing, load balancing, security, and authentication, providing a unified interface for client applications to interact with the microservices.
+**API Gateway**: An API Gateway serves as the entry point for external requests. It handles routing, load balancing, security, and authentication, providing a unified interface for client applications to interact with the microservices.
 
-Project Goals and Benefits:
+**Project Goals and Benefits:**
 
 Improved Scalability: Microservices architecture allows for horizontal scaling, enabling applications to handle increased loads more effectively.
 
@@ -28,3 +28,14 @@ Centralized Routing and Security: The API Gateway ensures that client requests a
 Scalable and Agile Development: Teams can work on different microservices concurrently, promoting agile development and faster time-to-market.
 
 This project will enable the organization to embrace the principles of microservices architecture, improving its software infrastructure, and better serving its customers with a more agile and scalable system.
+
+**Working**
+The currency-exchange microservice will have an object that will take data from the provided table of currencies. If the link is as currecy-exchange/from/USD/to/INR then the microservice will look for table with to and from data as INR and USD respectively and return the row data.
+
+The currency-conversion service will use this data by currency-exchange and return the value of new currency by multiplying the quantity of given.
+
+All prjects must be running simultaneouly.
+To fun the project use the API GATEWAY port number :- 
+To run Currency Conversion Service = http://localhost:8765/currency-conversion/from/USD/to/INR
+To run Currency Exchange Service = http://localhost:8765/currency-exchange/from/USD/to/INR/quantity/100
+
