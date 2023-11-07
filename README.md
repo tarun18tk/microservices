@@ -13,26 +13,29 @@ The "**Microservices Architecture with Spring Cloud, Eureka, and API Gateway**" 
 
 **Project Goals and Benefits:**
 
-Improved Scalability: Microservices architecture allows for horizontal scaling, enabling applications to handle increased loads more effectively.
+**Improved Scalability**: Microservices architecture allows for horizontal scaling, enabling applications to handle increased loads more effectively.
 
-Enhanced Fault Tolerance: By distributing functionality across multiple microservices, the system becomes more resilient to failures in individual components.
+**Enhanced Fault Tolerance**: By distributing functionality across multiple microservices, the system becomes more resilient to failures in individual components.
 
-Simplified Maintenance: Smaller, focused microservices are easier to manage, test, and update compared to monolithic applications.
+**Simplified Maintenance**: Smaller, focused microservices are easier to manage, test, and update compared to monolithic applications.
 
-Isolation of Concerns: Each microservice can be developed, tested, and deployed independently, which leads to better isolation of concerns and efficient development cycles.
+**Isolation of Concerns**: Each microservice can be developed, tested, and deployed independently, which leads to better isolation of concerns and efficient development cycles.
 
-Service Discovery: Eureka simplifies the process of locating and connecting to microservices, making it easier to maintain and scale services.
+**Service Discovery**: Eureka simplifies the process of locating and connecting to microservices, making it easier to maintain and scale services.
 
-Centralized Routing and Security: The API Gateway ensures that client requests are routed to the appropriate microservices and enforces security and authentication policies.
+**Centralized Routing and Security**: The API Gateway ensures that client requests are routed to the appropriate microservices and enforces security and authentication policies.
 
-Scalable and Agile Development: Teams can work on different microservices concurrently, promoting agile development and faster time-to-market.
+**Scalable and Agile Development**: Teams can work on different microservices concurrently, promoting agile development and faster time-to-market.
 
 This project will enable the organization to embrace the principles of microservices architecture, improving its software infrastructure, and better serving its customers with a more agile and scalable system.
 
 **Working**
-The currency-exchange microservice will have an object that will take data from the provided table of currencies. If the link is as currecy-exchange/from/USD/to/INR then the microservice will look for table with to and from data as INR and USD respectively and return the row data.
+The currency-exchange microservice will have an object that will take data from the provided table of currencies.
+If the link is as currecy-exchange/from/USD/to/INR then the microservice will look for 
+table with to and from data as INR and USD respectively and return the row data.
 
-The currency-conversion service will use this data by currency-exchange and return the value of new currency by multiplying the quantity of given.
+The currency-conversion service will use this data by currency-exchange and 
+return the value of new currency by multiplying the quantity of given.
 
 All prjects must be running simultaneouly.
 To fun the project use the API GATEWAY port number :- 
