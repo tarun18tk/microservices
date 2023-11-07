@@ -1,0 +1,15 @@
+Currency Exchange Service URL
+http://localhost:8000/currency-exchange/from/USD/to/INR
+
+Currency Conversion Service URL
+http://localhost:8100/currency-conversion-feign/from/USD/to/INR/quantity/10
+
+Using API gateway we dont need to remember the ports of each microservice,
+we can simply use the post number of API gateway, which is 8765(default), and
+we can use the name of the API thats mentioned in the Eureka and run the 
+URL with appropriate data.
+
+API-GATEWAY URLS
+http://localhost:8765/CURRENCY-CONVERSION
+http://localhost:8765/CURRENCY-EXCHANGE/currency-exchange/from/USD/to/INR
+http://localhost:8765/CURRENCY-CONVERSION/currency-conversion-feign/from/USD/to/INR/quantity/10
